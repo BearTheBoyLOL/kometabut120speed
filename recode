@@ -502,7 +502,7 @@ function farm(trying, important)
     if kometa.toggles.faceflames and findclosestflame() ~= nil then api.humanoidrootpart().CFrame = CFrame.lookAt(api.humanoidrootpart().Position, Vector3.new(findclosestflame().Position.X, api.humanoidrootpart().Position.Y, findclosestflame().Position.Z)) end
     if important and kometa.toggles.bloatfarm and temptable.foundpopstar then temptable.float = true api.teleport(CFrame.new(trying.CFrame.Position) * CFrame.Angles(0, math.rad(180), 0)) end
     -- if kometa.toggles.loopfarmspeed then game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = kometa.vars.farmspeed end
-    if kometa.toggles.randomizespeed then api.humanoid().WalkSpeed = math.random(100, 120) end
+    if kometa.toggles.randomizespeed then api.humanoid().WalkSpeed = math.random(30, 70) end
     api.humanoid().AutoRotate = false
     api.humanoid():MoveTo(trying.Position) 
     repeat task.wait() until (trying.Position-api.humanoidrootpart().Position).magnitude <= 5 or not IsToken(trying) or not temptable.running
@@ -513,7 +513,7 @@ function farmold(trying, important)
     if kometa.toggles.faceballoons and findballoon() then api.humanoidrootpart().CFrame = CFrame.lookAt(api.humanoidrootpart().Position, Vector3.new(findballoon().BalloonRoot.Position.X, api.humanoidrootpart().Position.Y, findballoon().BalloonRoot.Position.Z)) end
     if kometa.toggles.faceflames and findclosestflame() then api.humanoidrootpart().CFrame = CFrame.lookAt(api.humanoidrootpart().Position, Vector3.new(findclosestflame().Position.X, api.humanoidrootpart().Position.Y, findclosestflame().Position.Z)) end
     -- if kometa.toggles.loopfarmspeed then game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = kometa.vars.farmspeed end
-    if kometa.toggles.randomizespeed then api.humanoid().WalkSpeed = math.random(100, 120) end
+    if kometa.toggles.randomizespeed then api.humanoid().WalkSpeed = math.random(30, 70) end
     api.humanoid().AutoRotate = false
     api.humanoid():MoveTo(trying.Position) 
     repeat task.wait() until (trying.Position-api.humanoidrootpart().Position).magnitude <= 5 or not IsToken(trying) or not temptable.running
